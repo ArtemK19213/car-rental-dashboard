@@ -1,0 +1,110 @@
+@font-face
+{
+    font-family: "Poppins";
+    src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: "Poppins";
+    src: url(../assets/fonts/Poppins/Poppins-Medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+:root
+{
+    --yellow: #FFAB2D;
+    --blue: #638FC1;
+    --red: #FF4C4C;
+}
+
+
+header 
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 45px;
+    height: 74px;
+    align-items: center;
+
+}
+
+h1
+{
+    font-size: 48px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+body
+{
+    background-color: #E5E5E5;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.button-notifications
+{
+    position: relative;
+    background-color: transparent;
+    width: 74px;
+    height: 74px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.button-notifications.active
+{
+    border-color: black;
+}
+
+.button-settings 
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 74px;
+    height: 74px;
+
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.button-settings.active 
+{
+    border-color: black;
+}
+
+
+.notification-badge
+{
+    display: inline-flex;
+    align-items: center;      
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--red);
+    width: 34px;
+    height: 34px;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.buttons-header
+{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
