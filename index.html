@@ -13,7 +13,7 @@
 
 
 <body>
-<header>
+<header class="header-body">
 <h1>ПРОКАТ АВТО</h1>
 <div class = "buttons-header">
     <button type = "button" aria-label="Settings" class="button-settings"><img src="./assets/svg/Settings.svg" alt=""></button>
@@ -38,12 +38,157 @@
 </header>
 
 <main>
+    <div class="block-statistic">
+        <article class="stat-article">
+            <div class="date-stat">            
+                <img src="./assets/svg/Calendar.svg" alt="">
+                <span>01.09.2021 - 15.09.2021</span>
+            </div>
+            <h3 class="header-stat">Выручка (тыс.руб.)</h3>
+            <div class="value-stat">
+                <p>235,7</p>
+                <span class="percent-stat positive">+0,5%</span>
+            </div>
+        </article>
+        <article class="stat-article">
+            <div class="date-stat">            
+                <img src="./assets/svg/Calendar.svg" alt="">
+                <span>01.09.2021 - 15.09.2021</span>
+            </div>
+            <h3 class="header-stat">Заявки (шт.)</h3>
+            <div class="value-stat">
+                <p>118</p>
+                <span class="percent-stat positive">+0,5%</span>
+            </div>
+        </article>
+        <article class="stat-article">
+            <div class="date-stat">            
+                <img src="./assets/svg/Calendar.svg" alt="">
+                <span>01.09.2021 - 15.09.2021</span>
+            </div>
+            <h3 class="header-stat">Средний чек (тыс.руб.)</h3>
+            <div class="value-stat">
+                <p>2,7</p>
+                <span class="percent-stat negative">-4,5%</span>
+            </div>
+
+        </article>
+    </div>
+
+
+
+    <section class="analytics">
+        <article class="circle-diagram">
+            <header class="circle-diagram-header">
+                <h2>Авто в аренде</h2>
+                <button class="date-filter" type="button" style="color: #364355; font-size: 15px; font-weight: 500;">
+                    Дата
+                    <img src="./assets/svg/Vector.svg" alt="">
+                </button>
+            </header>
+            <div class="auto-rent">
+                <span class="value-circle-left">72 авто</span>
+                <div class="circle-auto-rent"></div>
+                <span class="value-circle-right">18 авто</span>
+            </div>
+            <footer class="analytics-card-footer">
+                <div class="results-free">
+                    <span>Свободно</span>
+                    <strong>18 авто</strong>
+                </div>
+                <div class="result-rent">
+                    <span>В аренде</span>
+                    <strong>72 авто</strong>
+                </div>
+            </footer>
+        </article>
+
+        <article class="graph-diagram">
+            <header class="graph-diagram-header" style="color:#364355">
+                <h2>Опции</h2>
+                <div class="date-stat">            
+                    <img src="./assets/svg/Calendar.svg" alt="">
+                    <span>01.09.2021 - 15.09.2021</span>
+                </div>
+            </header>
+            <div class="graph-filters">
+                <button type="button" class="graph-filter" style="background-color:#FFAB2D; color: #ffffff">Аксессуары</button>
+                <button type="button" class="graph-filter" style="background-color:#638FC1; color: #ffffff">Доп.выезды</button>
+                <button type="button" class="graph-filter">Выходные</button>
+                <button type="button" class="graph-filter">30 дней +</button>
+            </div>
+            <img class="graph" src="./assets/svg/Graph.svg" alt="">
+        </article>
+    </section>
+
+
+    <section class="table-statistic">
+        <h2>Статистика по офисам компании</h2>
+        <table>
+            <tr>
+                <th>Дата</th>
+                <th>Название офиса</th>
+                <th>Менеджер</th>
+                <th>телефон</th>
+                <th>Свободно</th>
+                <th>В аренде</th>
+                <th>Сервис</th>
+            </tr>
+            <tr>
+                <td>03.09.2021</td>
+                <td>Новоясеневская</td>
+                <td>Александр Суслов</td>
+                <td>(929) 111-11-22</td>
+                <td  style="color:green;">28</td>
+                <td  style="color:yellow;">117</td>
+                <td  style="color:red;">5</td>
+            </tr>
+            <tr>
+                <td>03.09.2021</td>
+                <td>Серпуховская</td>
+                <td>Александр Суслов</td>
+                <td>(929) 111-11-23</td>
+                <td  style="color:green;">28</td>
+                <td  style="color:yellow;">117</td>
+                <td  style="color:red;">5</td>
+            </tr>
+            <tr>
+                <td>03.09.2021</td>
+                <td>Владыкино</td>
+                <td>Александр Суслов</td>
+                <td>(929) 111-11-24</td>
+                <td  style="color:green;">28</td>
+                <td  style="color:yellow;">117</td>
+                <td  style="color:red;">5</td>
+            </tr>
+            <tr>
+                <td>03.09.2021</td>
+                <td>Владыкино</td>
+                <td>Александр Суслов</td>
+                <td>(929) 111-11-24</td>
+                <td  style="color:green;">28</td>
+                <td  style="color:yellow;">117</td>
+                <td  style="color:red;">5</td>
+            </tr>
+            <tr>
+                <td>03.09.2021</td>
+                <td>Владыкино</td>
+                <td>Александр Суслов</td>
+                <td>(929) 111-11-24</td>
+                <td  style="color:green;">28</td>
+                <td  style="color:yellow;">117</td>
+                <td  style="color:red;">5</td>
+            </tr>
+        </table>
+        
+
+    </section>
+
+
+
 
 </main>
 
-<footer>
-
-</footer>
 
 <script src="./js/script.js"></script>
 </body>
