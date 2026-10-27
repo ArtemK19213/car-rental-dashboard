@@ -1,0 +1,27 @@
+.loader-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+.loader {
+    width: 120px;
+    height: 768px;
+
+    background-image: url("../assets/images/loader-boy.png");
+    background-repeat: no-repeat;
+
+    animation: walk 3s steps(12) infinite;
+}
+
+@keyframes walk {
+    from {
+        background-position-x: 0;
+    }
+
+    to {
+        background-position-x: -2000px;
+    }
+}

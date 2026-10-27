@@ -26,3 +26,21 @@ document.addEventListener('click', (event) =>
     }
 });
 
+
+
+let notificationBadge = document.querySelector('.notification-badge');
+
+notificationBadge.addEventListener('click', () => {
+    if(notificationBadge.textContent < 100)
+    {
+        notificationBadge.textContent++;
+    }
+    else
+    {
+       notificationBadge.textContent = 0;
+    }
+    
+});
+
+
+

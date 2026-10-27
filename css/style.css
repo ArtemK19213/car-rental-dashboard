@@ -417,6 +417,15 @@ body
     height: 36px;
     padding: 7px;
     border-radius: 10px;
+
+
+    transition: background-color 1s ease;
+}
+
+
+.graph-filter:hover
+{
+    background-color: #FF4C4C;
 }
 
 
@@ -460,3 +469,33 @@ th
 
 }
 
+
+
+
+
+.loader-wrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+
+.loader
+{
+    border: solid red;
+    border-width: 0px 0px 5px 5px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: play 2s linear infinite;
+}
+
+
+@keyframes play 
+{
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}
